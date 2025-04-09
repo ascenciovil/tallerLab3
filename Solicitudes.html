@@ -16,7 +16,7 @@
       align-items: center;
       color: white;
     }
-    .navbar button, .navbar .rut {
+    .navbar button{
       margin: 0 10px;
       padding: 10px;
       border: none;
@@ -24,8 +24,17 @@
       background-color: #b70000;
       color: white;
     }
+    .navbar .rut {
+      margin-left: auto;
+      padding: 10px;
+      background-color: #b70000;
+      color: white;
+    }
     .navbar button.active {
-      background-color: #e60000;
+      background-color: #f5f5f5;
+      border-color: black ;
+      color: #e60000;
+      border-radius: 10px;
     }
     .container {
       padding: 20px;
@@ -93,7 +102,7 @@
 </head>
 <body>
   <div class="navbar">
-    <img src="logo.png" alt="Logo" height="40">
+    <img src="./img/utalblanco.png" alt="Logo" height="40">
     <button>Inicio</button>
     <button>Configurar horario</button>
     <button class="active">Solicitudes</button>
