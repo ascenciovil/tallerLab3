@@ -1,28 +1,16 @@
 <?php
 namespace App\Controllers;
+use App\Models\SolicitudModel;
 
 class SolicitudesController extends BaseController
 {
     public function index()
     {
         // Datos de ejemplo (reemplazarlos con datos de la base de datos)
-        $data['solicitudes'] = [
-            [
-                'nombre' => 'Allan Vallejos',
-                'mensaje' => 'Voy mañana profe a hablar de la tesis que me está quedando muy mal.',
-                'hora' => '11:20'
-            ],
-            [
-                'nombre' => 'María Pérez',
-                'mensaje' => 'Necesito ayuda con el proyecto final.',
-                'hora' => '14:30'
-            ],
-            [
-                'nombre' => 'Juan González',
-                'mensaje' => '¿Podría revisar mi avance?',
-                'hora' => '09:15'
-            ]
-        ];
+        $model = new SolicitudModel();
+
+        // Obtenemos todos los datos de la tabla
+        $data['solicitudes'] = $model->findAll();
 
         // Cargar la vista con los datos
         return view('Solicitudes', $data);

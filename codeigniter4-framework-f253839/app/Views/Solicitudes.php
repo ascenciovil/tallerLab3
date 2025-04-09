@@ -113,9 +113,9 @@
   <div class="container">
     <?php foreach ($solicitudes as $solicitud): ?>
       <div class="card">
-        <h4><?= esc($solicitud['nombre']) ?></h4>
-        <p><?= esc($solicitud['mensaje']) ?></p>
-        <div class="time"><?= esc($solicitud['hora']) ?></div>
+        <h4><?= esc($solicitud['Nombre']) ?></h4>
+        <p><?= esc($solicitud['Comentario']) ?></p>
+        <div class="time"><?= esc($solicitud['Fecha']) ?></div>
         <div class="buttons">
           <button class="accept">Aceptar</button>
           <button class="decline">Declinar</button>
