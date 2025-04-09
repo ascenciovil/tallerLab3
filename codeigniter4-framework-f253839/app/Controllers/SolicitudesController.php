@@ -25,7 +25,7 @@ class Solicitudes extends BaseController
         ];
 
         // Cargar la vista con los datos
-        return view('solicitudes/profesor', $data);
+        return view('Solicitudes', $data);
     }
 
     public function aceptar($id) 
