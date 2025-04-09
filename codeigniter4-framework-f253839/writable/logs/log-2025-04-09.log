@@ -1,0 +1,28 @@
+CRITICAL - 2025-04-09 14:09:08 --> ErrorException: Undefined variable $solicitudes
+[Method: GET, Route: /]
+in APPPATH\Controllers\SolicitudesController.php on line 105.
+ 1 APPPATH\Controllers\SolicitudesController.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $solicitudes', 'C:\\xampp\\htdocs\\tallerLab3\\codeigniter4-framework-f253839\\app\\Controllers\\SolicitudesController.php', 105)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(316): include_once('C:\\xampp\\htdocs\\tallerLab3\\codeigniter4-framework-f253839\\app\\Controllers\\SolicitudesController.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\tallerLab3\\codeigniter4-framework-f253839\\app\\Controllers\\SolicitudesController.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SolicitudesController')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SolicitudesController')
+ 6 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\SolicitudesController', true)
+ 7 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 14:20:40 --> ErrorException: Undefined variable $solicitudes
+[Method: GET, Route: /]
+in APPPATH\Views\Solicitudes.php on line 105.
+ 1 APPPATH\Views\Solicitudes.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $solicitudes', 'C:\\xampp\\htdocs\\tallerLab3\\codeigniter4-framework-f253839\\app\\Views\\Solicitudes.php', 105)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\tallerLab3\\codeigniter4-framework-f253839\\app\\Views\\Solicitudes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Solicitudes', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('Solicitudes')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

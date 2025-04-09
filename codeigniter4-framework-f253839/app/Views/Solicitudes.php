@@ -111,17 +111,17 @@
   </div>
 
   <div class="container">
-    <!-- Repetir esta tarjeta con distintos textos -->
-    <div class="card">
-      <h4>Allan Vallejos</h4>
-      <p>Voy mañana profe a hablar de la tesis que me está quedando muy mal.</p>
-      <div class="time">11:20</div>
-      <div class="buttons">
-        <button class="accept">Aceptar</button>
-        <button class="decline">Declinar</button>
+    <?php foreach ($solicitudes as $solicitud): ?>
+      <div class="card">
+        <h4><?= esc($solicitud['nombre']) ?></h4>
+        <p><?= esc($solicitud['mensaje']) ?></p>
+        <div class="time"><?= esc($solicitud['hora']) ?></div>
+        <div class="buttons">
+          <button class="accept">Aceptar</button>
+          <button class="decline">Declinar</button>
+        </div>
       </div>
-    </div>
-    <!-- Puedes copiar y pegar la tarjeta con diferentes textos para imitar el resto -->
+    <?php endforeach; ?>
   </div>
 
   <div class="footer">

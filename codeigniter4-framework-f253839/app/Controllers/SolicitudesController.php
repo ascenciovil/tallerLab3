@@ -1,7 +1,7 @@
 <?php
 namespace App\Controllers;
 
-class Solicitudes extends BaseController
+class SolicitudesController extends BaseController
 {
     public function index()
     {
